@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Desafio das imagens</h1>
+    <p>Desafio das imagens se adaptando ao tamanho do "navegador"/"aplicativo"</p>
+
+    <picture>
+        <source media="(max-width: 55px)" srcset="imagens/github-pp.png" type="image/png">
+        <source media="(max-width: 155px)" srcset="imagens/github-p.png" type="image/png">
+        <source media="(max-width: 250px)" srcset="imagens/github-m.png" type="image/png">
+        <source media="(max-width: 550px)" srcset="imagens/github-g.png" type="image/png">
+        <img src="imagens/github-gg.png" alt="Imagem flexivel">
+    </picture>
+</body>
+</html>

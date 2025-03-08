@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Midias em HTML5</h1>
+
+    <p>Tente abrir essa imagem em varios dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/M.png"type="image/png">
+        <img src="imagens/G.png" alt="Imagem flexivel">
+    </picture>
+
+    <p>Reproduzindo audio</p>
+    <!-- <audio src="midia/warzone.mp3" controls autoplay></audio> -->
+     <audio preload="metadata" autoplay controls>
+        <source src="midia/warzone.mp3" type="audio/mpeg">
+        <source src="midia/warzone.ogg" type="audio/ogg">
+        <source src="midia/warzone.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzio audio <a href="midia/warzone.mp3">clique aqui para baixar o audio</a></p>
+
+     </audio>
+
+     <p>Testando videos</p>
+
+     
+</body>
+</html>

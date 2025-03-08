@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize Meu Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition: background-color 0.5s; /* Animação suave */
+        }
+        h1 {
+            color: #333;
+        }
+        #colorPicker {
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalize a Cor do Site!</h1>
+    <input type="color" id="colorPicker" value="#ffffff">
+    <p>Escolha uma cor acima e veja a mágica!</p>
+
+    <script>
+        // Pega o elemento de seleção de cor
+        const colorPicker = document.getElementById('colorPicker');
+        const body = document.body;
+
+        // Carrega a cor salva (se existir) ao abrir o site
+        const savedColor = localStorage.getItem('userColor');
+        if (savedColor) {
+            body.style.backgroundColor = savedColor;
+            colorPicker.value = savedColor;
+        }
+
+        // Muda a cor do fundo e salva quando o usuário escolhe
+        colorPicker.addEventListener('input', function() {
+            const newColor = colorPicker.value;
+            body.style.backgroundColor = newColor;
+            localStorage.setItem('userColor', newColor); // Salva no navegador
+        });
+    </script>
+</body>
+</html>
