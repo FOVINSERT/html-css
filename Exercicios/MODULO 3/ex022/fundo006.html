@@ -7,22 +7,27 @@
 
     <style>
         body {
-            background-color: rgba(0, 0, 0, 0.647);
-            background-image: url('fundos/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: black url('fundos/wallpaper002.jpg') center center repeat-y  fixed;
             background-size: cover;
-           
-
+            height: 100vh;
         }
+
+        /* Shorthands - background
+            color > image > position > reapeat > (size) > attachment
+            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            size não está funcionando corretamente! Então terá que coloca-lo separado...
+        */
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 20px;
             margin: auto;
             border: 2px dashed blue;
             border-radius: 20px;
+        }
+        p {
+            text-align: justify;
         }
     </style>
 
@@ -31,6 +36,11 @@
     <main>
         <h1>Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et consequatur eveniet facilis tempora! Doloribus excepturi in vel nostrum recusandae sed porro inventore odit non quis, doloremque unde, itaque mollitia voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro dignissimos accusantium dolores aliquid sapiente obcaecati ratione autem esse culpa velit recusandae, labore iusto tempore consequuntur non. Labore, ex molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus voluptates illo porro reiciendis aliquam quas vero beatae ut pariatur aut, nisi repellat est distinctio, cum velit dignissimos omnis expedita?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore suscipit nam, ab sint voluptatem iusto dolorum ut fugiat blanditiis cupiditate nemo, dolor temporibus. Consequuntur adipisci minus quam delectus quae.</p>
     </main>
 </body>
