@@ -19,6 +19,7 @@
             width: 500px;
             margin: 10px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -47,14 +48,15 @@
             font-weight: bold;
         }
 
-        thead {
+        thead, tfoot {
             background-color: rgba(66, 62, 62, 0.907);
             color: rgb(255, 249, 249);
         }
 
-        tfoot {
-            background-color: rgb(66, 62, 62, 0.907);
-            color: rgb(255, 255, 255);
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(66, 62, 62, 0.907);
         }
 
         td.num {
@@ -226,7 +228,7 @@
         </tbody>
 
         <tfoot>
-            <th scope="row">Total de Abitantes</th>
+            <th scope="row">TOTAL</th>
             <td class="num"><strong>212 583 750</strong></td>
         </tfoot>
      </table>
