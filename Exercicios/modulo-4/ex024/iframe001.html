@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        iframe{
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.625);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Testando Iframe</h1>
+
+    <p>Acessando o site do curso em video. Para aprender a programar:</p>
+
+    <!-- Tamanho padrão: 300X150 px  -->
+    <iframe src="https://cursoemvideo.com" frameborder="0" scrolling="auto">  <!-- scrolling auto padrao, yes, and no para nao rolagem. < -->
+        <a href="https://cursoemvideo.com" target="_blank">Curso em Video</a>
+        [O navegador não é compativel com o frame adicionado! Acesse o curso em video a cima! ... ]
+
+    </iframe>
+
+</body>
+</html>
