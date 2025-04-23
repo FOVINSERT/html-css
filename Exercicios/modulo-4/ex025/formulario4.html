@@ -8,18 +8,21 @@
 <body>
     <h1>Formulario 04 Telefone e email</h1>
     <form action="" method="get" autocomplete="on">
-    <p>
-        <label for="iuser">Usuario:</label>
-        <input type="text" name="user" id="iuser" required placeholder="Tico Teco" maxlength="10" autocomplete="username">
-    </p>
-    <p>
-        <label for="iemail">Email:</label>
-        <input type="email" name="email" id="iemail" required placeholder="tico@gmail.com" autocomplete="email">
-    </p>
-    <p>
-        <label for="itelefone">Telefone:</label>
-        <input type="tel" name="telefone" id="itelefone" placeholder="(11) 9 9999-9999" max="15">
-    </p>
+    <fieldset>
+        <legend>Dados Pessoais:</legend>
+        <p>
+            <label for="iuser">Usuario:</label>
+            <input type="text" name="user" id="iuser" required placeholder="Tico Teco" maxlength="10" autocomplete="username">
+        </p>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required placeholder="tico@gmail.com" autocomplete="email">
+        </p>
+        <p>
+            <label for="itelefone">Telefone:</label>
+            <input type="tel" name="telefone" id="itelefone" placeholder="(11) 9 9999-9999" autocomplete="tel" pattern="^[0-9]{4}-[0-9{4}]">
+        </p>
+    </fieldset>
 
     <p>
         <input type="submit" value="Enviar">
